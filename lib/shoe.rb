@@ -10,8 +10,8 @@ class Shoe
     BRANDS << brand
   end
   
-  def brand
-    BRANDS.uniq { |x| x [:brand] }
+  def shoe=(shoe)
+    @Shoe = shoe
   end 
 
 
