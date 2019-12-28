@@ -7,8 +7,12 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS << brand.uniq { |x| x [:brand] }
+    BRANDS << brand
   end
+  
+  def BRANDS
+    BRANDS.uniq { |x| x [:brand] }
+  end 
 
 
   def cobble
